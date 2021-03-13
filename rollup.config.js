@@ -35,5 +35,14 @@ export default [
       sourcemap: true
     },
     external: ['mongoose']
+  },
+  {
+    input: 'src/websocket.js',
+    output: {
+      file: 'public/websocket.js',
+      format: 'umd',
+      sourcemap: true
+    },
+    external: ['ws']
   }
 ];

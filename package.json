@@ -41,7 +41,9 @@
     "mongodb": "^3.6.4",
     "mongodb-client-encryption": "^1.2.1",
     "mongoose": "^5.11.17",
-    "node-fetch": "^2.6.1"
+    "node-fetch": "^2.6.1",
+    "socket.io": "^3.1.2",
+    "ws": "^7.2.0"
   },
   "scripts": {
     "build": "rollup -c",
@@ -52,7 +54,8 @@
     "start-server": "node public/server.js",
     "db": "npm-run-all build start-db",
     "start-db": "node public/db.js",
-    "dummy-db": "json-server --watch public/dummy-db.json"
+    "dummy-db": "json-server --watch public/dummy-db.json",
+    "start-ws": "node public/websocket.js"
   },
   "author": "",
   "license": "ISC"
